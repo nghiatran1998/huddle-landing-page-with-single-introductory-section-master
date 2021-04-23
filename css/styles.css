@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+head {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat:no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+}
+
+#logo {
+    margin-top: 10%;
+    margin-bottom: 15%;
+    width: 40%;
+}
+
+main {
+    text-align: center;
+}
+
+h2, p {
+    line-height: 1.5;
+}
+
+.register {
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    width: 70%;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.register:active {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+#mockups {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20%;
+}
+
+a {
+    color: white;
+}
+
+a:active {
+    color: hsl(300, 69%, 71%);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin: 0px 20px;
+}
+
+@media screen and (min-width: 992px){
+    body {
+        background-image: url(../images/bg-desktop.svg);
+    }
+
+    main {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    #mockups {
+        max-width: 50%;
+    }
+
+    .text-section {
+        position: absolute;
+        width: 40%;
+        top: 5%;
+        right: 0px;
+        text-align: left;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #logo {
+        width: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .register {
+        width: 40%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .icon {
+        margin: 0px 10px;
+    }
+
+    .attribution {
+        position: relative;
+        right: 5%;
+    }
+
+}
